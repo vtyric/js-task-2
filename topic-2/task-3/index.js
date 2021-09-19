@@ -1,4 +1,5 @@
 /**
+ * Задача 3
  * В этой задаче вам необходимо дописать функцию,
  * которая проверяет группу на корректность
  * Функция принимает на вход строку содержащую символы (), {} или []
@@ -14,11 +15,8 @@
  * 
  * @param {*} group 
  */
- function isGroup(group) {
-    while (/\(\)|\[\]|\{\}/g.test(group)) {
-        group = group.replace(/\(\)|\[\]|\{\}/g, "")
-    }
-    return !group.length;
+function isGroup(group) {
+
 }
 
 module.exports.isGroup = isGroup;

@@ -1,4 +1,6 @@
-/** Допишите функцию, разбивающую массив на группы по размеру
+/**
+ * Задача 2
+ * Допишите функцию, разбивающую массив на группы по размеру
  * Если массив не может быть разделен равномерно, последней частью
  * будут оставшиеся элементы. Порядок элементов внутри группы важен.
  * 
@@ -12,18 +14,7 @@
  * @returns массив разбитый на группы
 */
 const arrayStripped = (array, size) => {
-    const result = [];
-    let index = 0;
 
-    if (!Array.isArray(array)) {
-        return [];
-    }
-    while (index < array.length) {
-        result.push(array.slice(index, index + size));
-        index += size;
-    }
-
-    return result;
 }
 
 
