@@ -1,0 +1,28 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2017
+  },
+  "env": {
+    "es6": true
+  },
+  "root": true,
+  "overrides": [
+    {
+      "rules": {
+        "camelcase": "error",
+        "no-unreachable": "error",
+        "curly": ["error"],
+        "no-mixed-spaces-and-tabs": "error",
+        "brace-style": "error",
+        "indent": "error",
+        "padding-line-between-statements": [
+          "error", { 
+            "blankLine": "always", "prev": "*", "next": "return" }
+        ]
+      },
+      "files": [
+        "*.js"
+      ]
+    }
+  ]
+}
