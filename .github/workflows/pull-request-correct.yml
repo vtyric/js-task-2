@@ -1,4 +1,4 @@
-name: Node.js CI
+name: PR Naming
 
 on:
   pull_request:

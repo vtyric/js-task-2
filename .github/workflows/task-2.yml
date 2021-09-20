@@ -1,4 +1,4 @@
-name: Node.js CI
+name: Task-2
 
 on:
   push:
