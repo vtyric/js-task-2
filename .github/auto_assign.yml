@@ -5,15 +5,15 @@ addAssignees: true
 
 # A list of reviewers to be added to pull requests (GitHub user name)
 assignees:
-  # - abrosimov-artsofte
-  # - daleunixal
-  # - flashart92
-  # - sanek-mizin
-  # - maffas
-  # - sadyan42
-  # - Dimoner
-  # - brskiy
-  # - loozmax
+   - abrosimov-artsofte
+   - daleunixal
+   - flashart92
+   - sanek-mizin
+   - maffas
+   - sadyan42
+   - Dimoner
+   - brskiy
+   - loozmax
 
 
 # A number of reviewers added to the pull request
