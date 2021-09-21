@@ -8,9 +8,7 @@
  * @param {*} numbers массив
  * @returns массив с удаленным элементом
  */
-function removeSmallest(numbers) {
-    
-}
+const removeSmallest = numbers => numbers.filter((x, i) => i !== numbers.indexOf(Math.min(...numbers)));
 
 module.exports.removeSmallest = removeSmallest;
 
