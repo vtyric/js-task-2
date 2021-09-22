@@ -16,7 +16,18 @@
  * @param {*} group 
  */
 function isGroup(group) {
+    const stack = [];
+    const map = new Map([['(', ')'], ['[', ']'], ['{', '}']]);
 
+    for (let e of group) {
+        if (map.has(e)) {
+            stack.push(e);
+        } else if (map.get(stack.pop()) !== e) {
+            return false;
+        }
+    }
+
+    return stack.length === 0;
 }
 
 module.exports.isGroup = isGroup;
