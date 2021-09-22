@@ -1,5 +1,3 @@
-import {miniMathLib} from "../task-4";
-
 /**
  * Задача 5 - Нехватка точности
  * Оказалось, что ранее написанная вами функция недостаточно точна : (
@@ -7,7 +5,13 @@ import {miniMathLib} from "../task-4";
  * Модифицировать miniMathLib из прошлой задачи - запрещено
  */
 function accurateAreaCalc() {
-    
+    return r => {
+        if (r < 0) {
+            throw new Error();
+        }
+
+        return 3.14159 * r ** 2;
+    }
 }
 
 
