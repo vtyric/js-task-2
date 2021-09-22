@@ -7,6 +7,7 @@ test('Method works fine', () => {
     expect(arrayStripped(undefined, 5)).toEqual([]);
     expect(() => {arrayStripped(null, null)}).toThrow();
     expect(() => {arrayStripped([1, 5, 7], null)}).toThrow();
+    expect(() => {arrayStripped([1, 5, 7], 0)}).toThrow();
 });
 
 test('Method gets incorrect data', () => {
