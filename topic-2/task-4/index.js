@@ -12,7 +12,7 @@ const miniMathLib = {
             throw new Error();
         }
 
-        return miniMathLib.pi * radius ** 2;
+        return this.pi * radius ** 2;
     }
 }
 
